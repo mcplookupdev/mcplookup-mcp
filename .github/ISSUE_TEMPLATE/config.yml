@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/mcplookupdev/mcplookup-mcp/security/advisories/new
+    about: Report vulnerabilities privately rather than opening a public issue.
+  - name: Product support
+    url: https://mcplookup.com/docs/mcp
+    about: Read the MCP connection, privacy, and support documentation.

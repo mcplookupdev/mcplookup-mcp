@@ -1,0 +1,19 @@
+name: Compatibility request
+description: Suggest a narrowly scoped improvement to the stdio adapter.
+title: "[Compatibility]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Client compatibility need
+      description: Explain which MCP client or transport behavior is affected.
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Proposed wrapper-only change
+      description: Trust logic and product behavior remain on the hosted service.
+    validations:
+      required: true

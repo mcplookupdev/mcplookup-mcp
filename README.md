@@ -1,5 +1,9 @@
 # MCPLookup MCP
 
+[![npm](https://img.shields.io/npm/v/@mcplookup/mcp.svg)](https://www.npmjs.com/package/@mcplookup/mcp)
+[![tests](https://github.com/mcplookupdev/mcplookup-mcp/actions/workflows/test.yml/badge.svg)](https://github.com/mcplookupdev/mcplookup-mcp/actions/workflows/test.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
 The official stdio compatibility wrapper for the MCPLookup remote MCP server—the
 independent trust layer for MCP.
 
@@ -14,7 +18,15 @@ This package exists for MCP clients that require a local stdio command. It forwa
 messages to the canonical hosted server without implementing scoring, storing evidence,
 adding authentication, or changing tool results.
 
-## Run
+## Connect
+
+Connect directly when your client supports remote Streamable HTTP:
+
+```text
+https://mcplookup.com/mcp
+```
+
+Use this package when your client requires a local stdio command:
 
 Node.js 20 or newer is required. No API key or environment variable is needed.
 
@@ -38,6 +50,13 @@ Generic MCP client configuration:
 Prefer a direct Streamable HTTP connection to `https://mcplookup.com/mcp` when your client
 supports remote MCP servers. The package is a transport adapter, not a separate service.
 
+## What stays remote
+
+The wrapper contains no trust scores, evidence database, taxonomy, authentication system,
+or scoring logic. MCPLookup evaluates public evidence at the canonical service and returns
+the same bounded, current-state response whether a client connects directly or through this
+stdio adapter.
+
 ## Data and security
 
 The wrapper has no credentials and writes no local data. Requests are sent to MCPLookup's
@@ -47,6 +66,9 @@ hosted endpoint, where bounded security and product telemetry are processed unde
 
 Report security issues according to [SECURITY.md](./SECURITY.md). For product support,
 email [hello@mcplookup.com](mailto:hello@mcplookup.com).
+
+Bug reports and narrowly scoped compatibility improvements are welcome. See
+[CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
 
 ## Development
 
