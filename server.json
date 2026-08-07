@@ -2,9 +2,9 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.mcplookup/mcp",
   "title": "MCPLookup",
-  "description": "Independent trust evidence for MCP servers: resolve, discover, and check current assessments.",
-  "version": "0.1.0",
-  "websiteUrl": "https://mcplookup.com/docs/mcp",
+  "description": "Look up independent trust ratings and security, maintenance, and adoption evidence for MCP servers.",
+  "version": "0.1.1",
+  "websiteUrl": "https://mcplookup.com",
   "repository": {
     "url": "https://github.com/mcplookupdev/mcplookup-mcp",
     "source": "github"
