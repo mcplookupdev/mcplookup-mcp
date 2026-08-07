@@ -50,6 +50,24 @@ Generic MCP client configuration:
 Prefer a direct Streamable HTTP connection to `https://mcplookup.com/mcp` when your client
 supports remote MCP servers. The package is a transport adapter, not a separate service.
 
+## MCP Registry
+
+MCPLookup is listed in the official MCP Registry as
+[`com.mcplookup/mcp`](https://registry.modelcontextprotocol.io/v0.1/servers?search=com.mcplookup/mcp).
+The name is verified through DNS control of `mcplookup.com`.
+
+One entry covers both connection paths, so a client installing from the Registry can use
+whichever it supports:
+
+| Path | Declaration |
+| --- | --- |
+| Canonical remote | `streamable-http` → `https://mcplookup.com/mcp` |
+| Compatibility package | npm `@mcplookup/mcp`, `stdio` transport |
+
+The entry declares no environment variables, headers, or credentials, matching the
+anonymous public interface. [`server.json`](./server.json) in this repository is the source
+of that metadata.
+
 ## What stays remote
 
 The wrapper contains no trust scores, evidence database, taxonomy, authentication system,
