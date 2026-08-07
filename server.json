@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.mcplookup/mcp",
+  "title": "MCPLookup",
+  "description": "Independent trust evidence for MCP servers: resolve, discover, and check current assessments.",
+  "version": "0.1.0",
+  "websiteUrl": "https://mcplookup.com/docs/mcp",
+  "repository": {
+    "url": "https://github.com/mcplookupdev/mcplookup-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcplookup.com/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mcplookup/mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

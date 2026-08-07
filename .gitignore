@@ -1,3 +1,8 @@
 node_modules/
 *.tgz
 .DS_Store
+
+# Registry publisher key material must never be committed
+*.pem
+mcp-registry-auth
+.mcppublisher
