@@ -1,0 +1,44 @@
+{
+  "name": "@mcplookup/mcp",
+  "version": "0.1.0",
+  "description": "Official stdio compatibility wrapper for the MCPLookup remote MCP server.",
+  "type": "module",
+  "bin": {
+    "mcplookup-mcp": "bin/mcplookup-mcp.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "npm test && npm pack --dry-run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "mcpName": "com.mcplookup/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcplookupdev/mcplookup-mcp.git"
+  },
+  "homepage": "https://mcplookup.com/docs/mcp",
+  "bugs": {
+    "url": "https://github.com/mcplookupdev/mcplookup-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcplookup",
+    "trust",
+    "security"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
