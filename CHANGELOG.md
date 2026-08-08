@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4
+
+- No runtime or MCP interface changes.
+- First release published through npm Trusted Publishing with verifiable build provenance.
+- Aligns the package lockfile, npm package version, and MCP Registry metadata at `0.1.4`.
+
 ## 0.1.3
 
 - Republished under the MCPLookup organization account. No runtime or interface changes.

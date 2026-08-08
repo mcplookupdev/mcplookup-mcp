@@ -3,7 +3,7 @@
   "name": "com.mcplookup/mcp",
   "title": "MCPLookup",
   "description": "Look up independent trust ratings and security, maintenance, and adoption evidence for MCP servers.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "websiteUrl": "https://mcplookup.com",
   "repository": {
     "url": "https://github.com/mcplookupdev/mcplookup-mcp",
@@ -19,7 +19,7 @@
     {
       "registryType": "npm",
       "identifier": "@mcplookup/mcp",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "transport": {
         "type": "stdio"
       }
