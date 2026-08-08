@@ -1,7 +1,7 @@
 import { createInterface } from "node:readline";
 
 export const CANONICAL_ENDPOINT = "https://mcplookup.com/mcp";
-export const PACKAGE_VERSION = "0.1.2";
+export const PACKAGE_VERSION = "0.1.3";
 const MAX_RESPONSE_BYTES = 256 * 1024;
 const REQUEST_TIMEOUT_MS = 20_000;
 
