@@ -1,9 +1,9 @@
 # Changelog
 
-## 0.1.2
+## 0.1.3
 
 - Republished under the MCPLookup organization account. No runtime or interface changes.
-- Supersedes 0.1.0, which was unpublished. Pin `0.1.2` or later.
+- Supersedes 0.1.0 and 0.1.2, both unpublished. Pin `0.1.3` or later.
 - Matches the MCP Registry entry version so the two are easy to correlate. They may diverge
   again in future: Registry metadata is immutable, so a metadata-only change needs a new
   entry version without a new npm artifact.
