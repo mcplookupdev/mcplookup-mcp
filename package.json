@@ -27,6 +27,7 @@
     "url": "git+https://github.com/mcplookupdev/mcplookup-mcp.git"
   },
   "homepage": "https://mcplookup.com/docs/mcp",
+  "author": "MCPLookup <hello@mcplookup.com> (https://mcplookup.com)",
   "bugs": {
     "url": "https://github.com/mcplookupdev/mcplookup-mcp/issues"
   },
@@ -39,6 +40,7 @@
   ],
   "license": "MIT",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   }
 }
