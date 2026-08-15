@@ -1,0 +1,20 @@
+{
+  "name": "mcplookup",
+  "version": "0.1.4",
+  "description": "Find the right MCP server. Check it before you connect.",
+  "author": {
+    "name": "MCPLookup",
+    "email": "hello@mcplookup.com",
+    "url": "https://mcplookup.com"
+  },
+  "homepage": "https://mcplookup.com/docs/mcp",
+  "repository": "https://github.com/mcplookupdev/mcplookup-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "server-discovery",
+    "identity",
+    "trust",
+    "security"
+  ]
+}

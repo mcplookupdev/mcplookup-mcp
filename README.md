@@ -96,3 +96,16 @@ npm pack --dry-run
 ```
 
 The package intentionally has zero runtime dependencies.
+
+## Marketplace package
+
+This repository also contains the shared MCPLookup marketplace package:
+
+- `.claude-plugin/plugin.json` and `.mcp.json` package the remote server for Claude.
+- `.codex-plugin/plugin.json` packages the same remote server for ChatGPT and Codex.
+- `skills/verify-mcp-server/SKILL.md` adds the proactive pre-connect verification workflow.
+- `review/marketplace-cases.md` defines the positive, negative, and direct-connect release cases.
+
+The skill improves orchestration but is not required for correct tool selection. Direct MCP,
+Registry, npm-wrapper, and VS Code clients receive independently useful tool descriptions and
+server instructions from the canonical hosted service.
