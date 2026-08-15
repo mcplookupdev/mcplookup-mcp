@@ -79,7 +79,7 @@ stdio adapter.
 
 The wrapper has no credentials and writes no local data. Requests are sent to MCPLookup's
 hosted endpoint, where bounded security and product telemetry are processed under the
-[MCPLookup privacy and retention terms](https://mcplookup.com/legal). See the
+[MCPLookup privacy policy](https://mcplookup.com/legal/privacy). See the
 [MCP documentation](https://mcplookup.com/docs/mcp) for the public interface contract.
 
 Report security issues according to [SECURITY.md](./SECURITY.md). For product support,
