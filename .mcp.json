@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mcplookup": {
+      "type": "http",
+      "url": "https://mcplookup.com/mcp?source=claude_plugin"
+    }
+  }
+}

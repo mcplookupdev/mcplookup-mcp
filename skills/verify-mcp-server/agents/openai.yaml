@@ -1,0 +1,13 @@
+interface:
+  display_name: "MCPLookup"
+  short_description: "Verify MCP servers before connecting"
+  default_prompt: "Use $verify-mcp-server to check this MCP server before I connect."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "mcplookup"
+      description: "MCPLookup public MCP identity and trust tools"
+      transport: "streamable_http"
+      url: "https://mcplookup.com/mcp?source=openai_plugin"
+policy:
+  allow_implicit_invocation: true

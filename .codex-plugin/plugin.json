@@ -1,0 +1,45 @@
+{
+  "name": "mcplookup",
+  "version": "0.1.4",
+  "description": "Find the right MCP server and inspect its current public trust evidence before connecting.",
+  "author": {
+    "name": "MCPLookup",
+    "email": "hello@mcplookup.com",
+    "url": "https://mcplookup.com"
+  },
+  "homepage": "https://mcplookup.com/docs/mcp",
+  "repository": "https://github.com/mcplookupdev/mcplookup-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "server-discovery",
+    "identity",
+    "trust",
+    "security"
+  ],
+  "skills": "./skills/",
+  "mcpServers": {
+    "mcplookup": {
+      "type": "http",
+      "url": "https://mcplookup.com/mcp?source=openai_plugin"
+    }
+  },
+  "interface": {
+    "displayName": "MCPLookup",
+    "shortDescription": "Check MCP servers before connecting",
+    "longDescription": "Resolve ambiguous MCP server identities, distinguish first-party servers from third-party implementations, and inspect sourced public trust evidence before connecting.",
+    "developerName": "MCPLookup",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://mcplookup.com",
+    "privacyPolicyURL": "https://mcplookup.com/legal",
+    "termsOfServiceURL": "https://mcplookup.com/legal",
+    "defaultPrompt": [
+      "Check this MCP server before I connect",
+      "Which server is the official one?",
+      "Compare these MCP server identities"
+    ]
+  }
+}
