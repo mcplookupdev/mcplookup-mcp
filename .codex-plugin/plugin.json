@@ -34,8 +34,8 @@
       "Read"
     ],
     "websiteURL": "https://mcplookup.com",
-    "privacyPolicyURL": "https://mcplookup.com/legal",
-    "termsOfServiceURL": "https://mcplookup.com/legal",
+    "privacyPolicyURL": "https://mcplookup.com/legal/privacy",
+    "termsOfServiceURL": "https://mcplookup.com/legal/terms",
     "defaultPrompt": [
       "Check this MCP server before I connect",
       "Which server is the official one?",
