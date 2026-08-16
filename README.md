@@ -75,6 +75,11 @@ or scoring logic. MCPLookup evaluates public evidence at the canonical service a
 the same bounded, current-state response whether a client connects directly or through this
 stdio adapter.
 
+The MIT license covers the plugin and wrapper software in this repository only. It does not
+license MCPLookup's hosted evidence database, assessments, verdicts, scores, classifications,
+taxonomy, historical record, or scoring framework. Use of service data remains governed by
+the [MCPLookup terms](https://mcplookup.com/legal/terms).
+
 ## Data and security
 
 The wrapper has no credentials and writes no local data. Requests are sent to MCPLookup's
