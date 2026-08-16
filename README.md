@@ -4,6 +4,7 @@
 [![tests](https://github.com/mcplookupdev/mcplookup-mcp/actions/workflows/test.yml/badge.svg)](https://github.com/mcplookupdev/mcplookup-mcp/actions/workflows/test.yml)
 [![MCPLookup Trust Index: gold, 89 out of 100](https://mcplookup.com/badge/com.mcplookup/mcp)](https://mcplookup.com/server/com.mcplookup/mcp)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![MCPLookup Trust Index: gold, 89 out of 100](https://mcplookup.com/badge/com.mcplookup/mcp)](https://mcplookup.com/server/com.mcplookup/mcp)
 
 The official stdio compatibility wrapper for the MCPLookup remote MCP server—the
 independent trust layer for MCP.
