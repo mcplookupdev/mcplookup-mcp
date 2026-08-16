@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.5
+
+- No runtime or MCP interface changes.
+- Adds the tracked MCPLookup Trust Index badge to the packaged README.
+- Aligns the package lockfile, npm package version, and MCP Registry metadata at `0.1.5`.
+
 ## 0.1.4
 
 - No runtime or MCP interface changes.
