@@ -1,5 +1,6 @@
 {
   "name": "mcplookup",
+  "displayName": "MCPLookup",
   "version": "0.1.4",
   "description": "Find the right MCP server. Check it before you connect.",
   "author": {
