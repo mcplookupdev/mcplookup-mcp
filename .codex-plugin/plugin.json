@@ -1,6 +1,6 @@
 {
   "name": "mcplookup",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Find the right MCP server and inspect its current public trust evidence before connecting.",
   "author": {
     "name": "MCPLookup",

@@ -1,11 +1,16 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { createRequire } from "node:module";
 import {
   CANONICAL_ENDPOINT,
+  PACKAGE_VERSION,
   parseEventStream,
   relayLine,
   relayMessage,
 } from "../src/relay.js";
+
+const require = createRequire(import.meta.url);
+const packageJson = require("../package.json");
 
 test("parses JSON messages from Streamable HTTP events", () => {
   assert.deepEqual(
@@ -29,7 +34,8 @@ test("forwards the MCP message unchanged to the canonical endpoint", async () =>
   assert.equal(captured.url, CANONICAL_ENDPOINT);
   assert.deepEqual(JSON.parse(captured.init.body), request);
   assert.equal(captured.init.headers["content-type"], "application/json");
-  assert.match(captured.init.headers["user-agent"], /^mcplookup-mcp\//);
+  assert.equal(PACKAGE_VERSION, packageJson.version);
+  assert.equal(captured.init.headers["user-agent"], `mcplookup-mcp/${packageJson.version}`);
   assert.deepEqual(responses, [{ jsonrpc: "2.0", id: 7, result: { tools: [] } }]);
 });
 

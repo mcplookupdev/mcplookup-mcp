@@ -1,7 +1,9 @@
+import { createRequire } from "node:module";
 import { createInterface } from "node:readline";
 
 export const CANONICAL_ENDPOINT = "https://mcplookup.com/mcp";
-export const PACKAGE_VERSION = "0.1.3";
+const require = createRequire(import.meta.url);
+export const PACKAGE_VERSION = require("../package.json").version;
 const MAX_RESPONSE_BYTES = 256 * 1024;
 const REQUEST_TIMEOUT_MS = 20_000;
 
