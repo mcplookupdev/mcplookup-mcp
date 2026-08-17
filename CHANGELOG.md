@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.6
+
+- Fixes the version the wrapper reports about itself. `PACKAGE_VERSION` was hardcoded and had
+  fallen two releases behind, so `0.1.5` sent `User-Agent: mcplookup-mcp/0.1.3`. It is now
+  derived from `package.json` and covered by a test, so it cannot drift again.
+- Aligns the Claude and Codex plugin manifests with the package, lockfile, and MCP Registry
+  metadata. All five were not on the same version in `0.1.5`.
+- No MCP interface changes. Tool names, arguments, and responses are unchanged.
+
 ## 0.1.5
 
 - No runtime or MCP interface changes.
